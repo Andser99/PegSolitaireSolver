@@ -21,7 +21,7 @@ namespace IQSoliterSolver
             0, 0, 0, 0, 0, 0, 0
         };
         //retarded end pattern for level 7, messing with my hard coded end patterns
-        //and efficient end condition one liner
+        //and efficient end condition one liner check
         private static int[] endPattern2 = new int[]
         {
             0, 0, 1, 1, 1, 0, 0,
@@ -121,6 +121,9 @@ namespace IQSoliterSolver
             0, 0, 1, 1, 1, 0, 0,
 
         };
+
+
+        //replace gameX endPatternY with any from above.
         static void Main(string[] args)
         {
             var res = FindSolution(new State(game8), endPattern3).GetAwaiter().GetResult();
